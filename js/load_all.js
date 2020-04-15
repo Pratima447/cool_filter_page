@@ -598,12 +598,16 @@ function change_url() {
 
 }
 
+
 $('.page-link').on('click', function () {
+    $('.page-link.active_nav').removeClass('active_nav');
+
     var page = $(this).attr('id');
 
+    $(this).addClass('active_nav');
     console.log('page=' + page);
-
-     // Call API and display result
+    
+    // Call API and display result
 
     // 
     // dummy result

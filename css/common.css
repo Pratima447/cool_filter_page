@@ -16,8 +16,8 @@
     margin-left: auto;
 }
 .container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
+    /* padding-right: 15px;
+    padding-left: 15px; */
     margin-right: auto;
     margin-left: auto;
 }
@@ -90,10 +90,9 @@
 .fade.in {
     opacity: 1;
 }
+
+
 .modal-dialog {
-    position: relative;
-    width: auto;
-    margin: 10px;
     height: 100%;
 }
 .modal-content {
@@ -170,6 +169,9 @@ section {
  }
 .m_b_10 {
     margin-bottom: 10%;
+}
+.margin_0_10_0_0 {
+    margin: 0 10px 0 0;
 }
 .margin_0_10 {
     margin: 0 10px;
@@ -465,6 +467,11 @@ section {
     border-color: #14a514;
    
 }
+.active_nav{
+    background-color: #14a514 !important;
+    border-color: #14a514 !important;
+   
+}
 .pagination>li>a, .pagination>li>span {
     padding: 10px 15px;
     margin: 0 4px;
@@ -499,10 +506,10 @@ section {
     padding: 15px;
 }
 .modal-content {
-    height: 100%;
     border: solid 0.5px #979797;
     background: #fff;
-    padding: 10px;
+    height: 100%;
+    overflow-y: scroll;
 }
 .full_width_modal {
     margin-top: 0px !important;
@@ -623,31 +630,31 @@ section {
 
 @keyframes openModals{
     0%{
-        transform: scale(0)
+        transform: translateX(-100%);
 
     }
     100%{
-        transform: scale(1)
+        transform: translateX(0);
     }
 }
 @keyframes closeModals{
     0%{
-        transform: scale(1)
+        transform: translateX(0);
 
     }
     100%{
-        transform: scale(0)
+        transform: translateX(-100%);
     }
 }
-.modal {
-    animation-duration: 0.5s;
+ .modal {
+    animation-duration: 0.7s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     animation-name: openModals;
     animation-timing-function: linear;
 }
 .close_modal {
-    animation-duration: 0.5s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     animation-name: closeModals;
@@ -674,12 +681,12 @@ section {
 }
 @media(min-width:992px) {
     .item_main_card {
-        width: 17vw;
+        width: 19vw;
     }
 }
 @media(max-width:768px) {
     .sort_box {
-        width: 89%;
+        /* width: 89%; */
     }
     .img_container {
         padding: 20%;
@@ -699,12 +706,12 @@ section {
         display: flex;
     }
     .item_main_card {
-        width: 18vw;
+        width: 22vw;
     }
 }
 @media (min-width : 768px) and (max-width: 596px) {
     .item_main_card {
-        width: 39vw;
+        width: 46vw;
     }
    
 }
@@ -718,7 +725,7 @@ section {
 }
 @media(max-width:500px) {
     .item_main_card {
-        width: 35vw;
+        width: 44vw;
     }
 }
 
@@ -727,7 +734,7 @@ section {
         display: block;
     }
     .item_main_card {
-        width: 70vw;
+        width: 94vw;
     }
     .deal_btn_pos {
         float: none;

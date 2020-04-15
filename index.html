@@ -22,28 +22,27 @@
 
 </head>
 
-<body style="background: #eee;">
+<body style="background: #eee;overflow-x: hidden;margin: 0;">
     <!-- Header -->
-    <section class="container-fluid position_fixed header_section white_background">
+    <section class="row position_fixed header_section white_background">
         <div class="row col-md-12 col-sm-12 col-lg-12 col-xs-12 height_70 general_box_shadow">
 
         </div>
     </section>
     <!-- Header ends -->
 
-
     <!-- Main Page -->
     <section class="container-fluid ">
-        <div class="row col-md-12 col-sm-12 col-lg-12 col-xs-12 ">
+        <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 ">
             <ul class="breadcrumbs list_style_none d_flex font_size_14 margin_inherit p_30_0">
                 <li><a href="http://www.dealscargo.com/" title="Back to the frontpage"><span>Home / </span></a></li>
                 <li><a href="http://www.dealscargo.com/stores/flipkart/deals" title="Flipkart Deals"><span>Flipkart Deals</span></a></li>
             </ul>
         </div>
 
-        <div class="row d_flex">
+        <div class="d_flex">
             <!-- Web Filters -->
-            <div class="sans_font col-md-2 col-sm-2 col-lg-2 hidden-xs white_background  margin_0_10 filter_box">
+            <div class="sans_font col-md-2 col-sm-2 col-lg-2 hidden-xs white_background margin_0_10_0_0 filter_box">
                 <div class="row background_d5cdcd d_flex">
                     <div class="col-md-5 col-sm-5 col-lg-5 padding_10">
                         <div class="font_size_14">Filters</div>
@@ -219,8 +218,8 @@
             </div>
             <!-- Web Filters end -->
 
-            <div class="col-md-9 col-sm-9 col-lg-9 col-xs-10 white_background  margin_0_10 sort_box chunk">
-                <div class="chunk padding_10 h1_tag">
+            <div class="col-md-9 col-sm-9 col-lg-9 col-xs-12 white_background sort_box chunk">
+                <div class="chunk h1_tag">
                     <h1 class="sans_font font_weight color_9b9b9b font_size_18 vertical_sub"><span class="custom_dot">. </span>Latest Deals</h2>
                 </div>
 
@@ -257,14 +256,14 @@
                 <!-- Web sort design ends-->
 
                 <!-- Mobile sort/filter design -->
-                    <div class="row d_none m_b_10" id="mob_filter_div">
+                    <div class="row d_none " id="mob_filter_div">
                         <button id="filter_by_div" data-toggle="modal" data-target="#filters" class="col-xs-6 filter_buttons_mob white_background">
                             <i class="fa fa-sliders icon_space"></i>
-                            <span>Filters</span>
+                            <span class="font_weight">Filters</span>
                         </button>
                         <button id="sort_by_div" data-toggle="modal" data-target="#sort_by" class="col-xs-6 filter_buttons_mob white_background left_border no_border_r">
                             <i class="fa fa-sort icon_space"></i>
-                            <span>Sort by</span>
+                            <span class="font_weight">Sort by</span>
                         </button>
                     </div>
 
@@ -515,12 +514,12 @@
                 <hr class="list_separation_line">
 
                 <!-- Placeholder divs -->
-                <div class="d_flex sans_font" id="items">
+                <div class="d_flex sans_font row" id="items">
                 </div>
                 <!-- Placeholder divs ends-->
                 
                 <!-- Listings -->
-                <div class="d_flex sans_font" id="real_items">
+                <div class="d_flex sans_font row"id="real_items">
                     <div class="item_main_card item_card_border ">
                         <div class=" item_box_shadow img_container">
                             <img class="item_img" src="./images/products/smart_band.jpeg" alt="Buy Mi Smart Band - India's No.1 Fitness Band" title="Buy Mi Smart Band - India's No.1 Fitness Band">
@@ -728,11 +727,11 @@
                         <li class="page-item disabled" aria-disabled="true" aria-label="« Previous">
                             <span class="page-link" aria-hidden="true">‹</span>
                         </li>
-                        <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
-                        <li class="page-item"><a class="page-link cursor_point" id="2">2</a></li>
+                        <li class="page-item "><a class="page-link cursor_point active_nav" id="1">1</a></li>
+                        <li class="page-item" ><a class="page-link cursor_point" id="2">2</a></li>
                         <li class="page-item"><a class="page-link cursor_point" id="3">3</a></li>
-                        <li class="page-item"><a class="page-link cursor_point" id="4">4</a></li>
-                        <li class="page-item"><a class="page-link cursor_point" id="5">5</a></li>
+                        <li class="page-item"><a class="page-link  cursor_point" id="4">4</a></li>
+                        <li class="page-item"><a class="page-link  cursor_point" id="5">5</a></li>
                         <li class="page-item">
                             <a class="page-link" rel="next" aria-label="Next »">›</a>
                         </li>
@@ -742,11 +741,11 @@
 
         </div>
     </section>
+
     <!-- Main Page Ends -->
 
 </body>
+
 </html>
-
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-
 <script src="./js/load_all.js"></script>
